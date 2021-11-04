@@ -9,11 +9,11 @@ import androidx.appcompat.widget.AppCompatEditText;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class MainActivity extends AppCompatActivity {
-    public TextInputEditText username;
-    private String nameInput;
     // Put class variables up here
     // Best practice is to make them private (can only be accessed within the class, or using getters/setters)
     // Each UI component that you want to reference needs a variable
+    //public TextInputEditText username;
+    private TextInputEditText nameInput;
 
     /**
      * Method used to start an activity. It's the first method to run when the
@@ -21,12 +21,13 @@ public class MainActivity extends AppCompatActivity {
      * @param savedInstanceState
      */
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         // obtain user's name using findViewById
-        nameInput = findViewById(username).getText().toString();
+        nameInput = findViewById(R.id.username);
     }
 
     /**
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void startQuiz(View view){
         // set name variable every time user clicks "start"
-        String name = nameInput;
+        String name = nameInput.getText().toString();
 
         // If the name field is empty, prompt user to enter name
         if (name.isEmpty())
