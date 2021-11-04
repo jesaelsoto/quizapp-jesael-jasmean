@@ -6,9 +6,10 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.appcompat.widget.AppCompatEditText;
+import com.google.android.material.textfield.TextInputEditText;
 
 public class MainActivity extends AppCompatActivity {
-
+    public TextInputEditText username;
     // Put class variables up here
     // Best practice is to make them private (can only be accessed within the class, or using getters/setters)
     // Each UI component that you want to reference needs a variable
