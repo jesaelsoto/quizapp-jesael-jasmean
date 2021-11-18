@@ -14,7 +14,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0" app:layout_constraintTop_toBottomOf="@+id/cardView"
             android:layout_marginTop="160dp" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.0"/>
+            app:layout_constraintVertical_bias="0.0" android:onClick="startQuiz"/>
     <TextView
             android:text="Please enter your name"
             android:layout_width="wrap_content"
