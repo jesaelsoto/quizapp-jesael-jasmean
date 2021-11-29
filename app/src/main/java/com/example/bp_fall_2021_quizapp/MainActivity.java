@@ -41,9 +41,12 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getBaseContext(), "Please enter your name", Toast.LENGTH_SHORT).show();
         }
         // If user has entered name, begin quiz
-        Intent intent = new Intent(this, QuizQuestionActivity.class);
-        startActivity(intent);
-        finish(); // close current activity
+        else
+        {
+            Intent intent = new Intent(this, QuizQuestionActivity.class);
+            startActivity(intent);
+            finish(); // close current activity
+        }
         }
 
     }
